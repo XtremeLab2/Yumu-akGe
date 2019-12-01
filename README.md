@@ -3,15 +3,29 @@
 NLP.py
 
 class User:
-  add_event fonksiyonu user objesinin katıldığı etkinlikleri listeye kaydeder.
+  def add_event: user objesinin katıldığı etkinlikleri listeye kaydeder.
 
 class Society:
-  add_event fonksiyonu society'nin hazırladığı etkinlikleri listeye kaydeder.
+  def add_event: society'nin hazırladığı etkinlikleri listeye kaydeder.
 
 class Event:
-  add_user_rate fonksiyonu userların etkinlik hakkında görüş puanlarını etkinlik objesine kaydeder.
+  def add_user_rate: userların etkinlik hakkında görüş puanlarını etkinlik objesine kaydeder.
 
 class Database:
-  fetch_from fonksiyonu web sitesinden etkinlik verilerini çeker ve Event objesi listesi olarak return eder.
+  def fetch_from: web sitesinden etkinlik verilerini çeker ve Event objesi listesi olarak return eder.
   
-  import_data fonksiyonu aldığı Event
+  def import_data: aldığı Event objelerinin bilgilerini kullanarak gerekli formlarda kaydeder.
+  
+  def calculate_rates: userların etkinlikler hakkındaki görüş puanlarını düzenler.
+  
+  def recommend: kullanıcının daha önce katıldığı etkinlikleri referans alarak, yeni duyurusu yapılmış bir etkinliğe tahmini bir beğenme puanı verir.
+  
+  def classify: yeni bir etkinliği, daha önceki etkinliklerin açıklama metinlerinin benzerliği yönünde, hangi topluluk tarafından oluşturulduğunu tahmin eder.
+  
+  def predict_point: kullanıcıların etkinlikler hakkında yaptığı yorumları değerlendirerek 0-5 arasında beğeni puanı verir.
+  
+  
+  
+GUI.py
+  
+  def add_child_page: ikinci argümanda verilen sayfaları, birinci argümanın alt sayfaları olarak kaydeder.
