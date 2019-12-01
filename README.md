@@ -14,4 +14,4 @@ class Event:
 class Database:
   fetch_from fonksiyonu web sitesinden etkinlik verilerini çeker ve Event objesi listesi olarak return eder.
   
-  import_data fonk
+  import_data fonksiyonu aldığı Event
